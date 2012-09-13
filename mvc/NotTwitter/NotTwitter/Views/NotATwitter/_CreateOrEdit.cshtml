@@ -1,0 +1,28 @@
+@model NotTwitter.Models.NotATweet
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Username)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Username)
+    @Html.ValidationMessageFor(model => model.Username)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Text)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Text)
+    @Html.ValidationMessageFor(model => model.Text)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Published)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Published)
+    @Html.ValidationMessageFor(model => model.Published)
+</div>
+
